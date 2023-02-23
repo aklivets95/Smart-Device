@@ -1,7 +1,7 @@
 @use "./variables.scss";
 
 @mixin main-title-desktop {
-  font-family: 'Roboto Condensed', sans-serif;
+  font-family: "Roboto Condensed", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 80px;
@@ -12,7 +12,7 @@
 }
 
 @mixin main-title-tablet {
-  font-family: 'Roboto Condensed', sans-serif;
+  font-family: "Roboto Condensed", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 64px;
@@ -22,7 +22,7 @@
 }
 
 @mixin main-title-mobile {
-  font-family: 'Roboto Condensed', sans-serif;
+  font-family: "Roboto Condensed", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 36px;
@@ -32,7 +32,7 @@
 }
 
 @mixin main-block-text-desktop {
-  font-family: 'PT Mono', monospace;
+  font-family: "PT Mono", monospace;
   font-style: normal;
   font-weight: 400;
   font-size: 22px;
@@ -41,7 +41,7 @@
 }
 
 @mixin main-block-text-mobile {
-  font-family: 'PT Mono', monospace;
+  font-family: "PT Mono", monospace;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -49,21 +49,21 @@
 }
 
 @mixin primary-text-desktop {
-  font-family: 'PT Mono', monospace;
+  font-family: "PT Mono", monospace;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
 }
 
 @mixin primary-text-mobile {
-  font-family: 'PT Mono';
+  font-family: "PT Mono", monospace;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
 }
 
 @mixin section-title-desktop {
-  font-family: 'Roboto Condensed', sans-serif;
+  font-family: "Roboto Condensed", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 36px;
@@ -71,7 +71,7 @@
 }
 
 @mixin section-title-desktop {
-  font-family: 'Roboto Condensed', sans-serif;
+  font-family: "Roboto Condensed", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 36px;
@@ -79,7 +79,7 @@
 }
 
 @mixin section-title-mobile {
-  font-family: 'Roboto Condensed', sans-serif;
+  font-family: "Roboto Condensed", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 30px;
@@ -87,14 +87,14 @@
 }
 
 @mixin footer-link-desktop {
-  font-family: 'PT Mono', monospace;
+  font-family: "PT Mono", monospace;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
 }
 
 @mixin footer-link-mobile {
-  font-family: 'PT Mono', monospace;
+  font-family: "PT Mono", monospace;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
