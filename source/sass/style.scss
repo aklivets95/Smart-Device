@@ -24,13 +24,15 @@
 @import "blocks/custom-toggle";
 @import "blocks/custom-select";
 @import "blocks/header.scss";
+@import "blocks/offer.scss";
+@import "blocks/main.scss";
 
 // ---------------------------------
 
 // ❗❗❗ запрещено использовать изображения в css, касается как jpg \ png, так и svg
 
 // ❗ обязательно используйте mixin hover-focus для отключения ховеров на тач устройствах
-/* @mixin hover-focus {
+@mixin hover-focus {
     @media (hover: hover) {
       &:hover:not(.focus-visible) {
         @content;
@@ -41,7 +43,6 @@
       @content;
     }
   }
-*/
 /*  @include hover-focus {
       opacity: 0.8;
     }
