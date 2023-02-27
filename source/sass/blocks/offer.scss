@@ -2,6 +2,7 @@
 @use "../mixins.scss";
 
 .offer {
+  position: relative;
   min-height: 880px;
   background-image: linear-gradient(180deg, rgba(25, 32, 36, 0.7) 71.72%, rgba(25, 32, 36, 0) 100%);
 
@@ -18,15 +19,7 @@
   position: absolute;
   z-index: -1;
   object-fit: cover;
-  height: 880px;
-
-  @include vp-1023 {
-    height: 640px;
-  }
-
-  @include vp-767 {
-    height: 560px;
-  }
+  height: 100%;
 }
 
 .offer__container {

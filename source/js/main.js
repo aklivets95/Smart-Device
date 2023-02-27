@@ -1,6 +1,7 @@
 import {iosVhFix} from './utils/ios-vh-fix';
 import {initModals} from './modules/modals/init-modals';
 import {Form} from './modules/form-validate/form';
+import {initAccordions} from './vendor/init-accordion';
 
 // ---------------------------------
 
@@ -38,13 +39,14 @@ window.addEventListener('DOMContentLoaded', () => {
 // url до иконок пинов карты, настройки автопрокрутки слайдера, url к json и т.д.
 
 // для адаптивного JS используется matchMedia и addListener
-// const breakpoint = window.matchMedia(`(min-width:1024px)`);
-// const breakpointChecker = () => {
-//   if (breakpoint.matches) {
-//   } else {
-//   }
-// };
-// breakpoint.addListener(breakpointChecker);
-// breakpointChecker();
+const breakpoint = window.matchMedia('(max-width:768px)');
+
+const breakpointChecker = () => {
+  if (breakpoint.matches) {
+    initAccordions();
+  }
+};
+breakpoint.addListener(breakpointChecker);
+breakpointChecker();
 
 // используйте .closest(el)

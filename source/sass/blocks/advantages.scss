@@ -1,0 +1,123 @@
+@use "../variables.scss";
+@use "../mixins.scss";
+
+.advantages__container {
+  max-width: 1220px;
+  margin: 0 auto;
+
+  @include vp-1023 {
+    padding: 0 50px;
+  }
+
+  @include vp-767 {
+    padding: 0 25px;
+  }
+}
+
+.advantages__list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+
+  @include vp-767 {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.advantages__item {
+  position: relative;
+  padding: 40px 45px 35px;
+  min-height: 300px;
+  border: 1px solid #ebebeb;
+
+  &::after {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    width: 5px;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    background-color: variables.$color-deep-sky-blue;
+    transition: width ease-in 0.4s;
+  }
+
+  @include hover {
+    .advantages__item-icon {
+      fill: variables.$color-alice-blue;
+    }
+
+    .advantages__item-title {
+      color: variables.$color-alice-blue;
+    }
+
+    .advantages__item-description {
+      color: variables.$color-alice-blue;
+    }
+
+    &::after {
+      width: 100%;
+    }
+  }
+
+  @include focus {
+    .advantages__item-icon {
+      fill: variables.$color-alice-blue;
+    }
+
+    .advantages__item-title {
+      color: variables.$color-alice-blue;
+    }
+
+    .advantages__item-description {
+      color: variables.$color-alice-blue;
+    }
+
+    &::after {
+      width: 100%;
+    }
+  }
+
+  @include vp-1023 {
+    min-height: 360px;
+    padding: 40px 30px 35px 45px;
+  }
+
+  @include vp-767 {
+    padding: 30px 30px 35px;
+    min-height: 340px;
+  }
+}
+
+.advantages__item-icon {
+  margin-bottom: 20px;
+  display: block;
+  fill: variables.$color-deep-sky-blue;
+  transition: fill ease-in 0.4s;
+}
+
+.advantages__item-title {
+  margin: 0 0 15px;
+
+  @include mixins.advantages-title-desktop;
+  transition: color ease-in 0.4s;
+
+  @include vp-767 {
+    @include mixins.advantages-title-mobile;
+  }
+}
+
+.advantages__item-description {
+  margin: 0;
+
+  @include mixins.advantages-description-desktop;
+  transition: color ease-in 0.4s;
+
+  @include vp-767 {
+    @include mixins.advantages-description-mobile;
+  }
+}

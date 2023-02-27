@@ -12,3 +12,27 @@
     margin-top: -70px;
   }
 }
+
+.main__offer {
+  margin-bottom: 120px;
+
+  @include vp-1023 {
+    margin-bottom: 80px;
+  }
+
+  @include vp-767 {
+    margin-bottom: 50px;
+  }
+}
+
+.main__advantages {
+  margin-bottom: 120px;
+
+  @include vp-1023 {
+    margin-bottom: 80px;
+  }
+
+  @include vp-767 {
+    margin-bottom: 50px;
+  }
+}

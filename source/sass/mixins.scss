@@ -86,11 +86,40 @@
   line-height: 140.62%;
 }
 
+@mixin advantages-title-desktop {
+  font-family: "Roboto Condensed", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 24px;
+  color: variables.$color-deep-sky-blue;
+}
+
+@mixin advantages-title-mobile {
+  font-size: 20px;
+  line-height: 140%;
+}
+
+@mixin advantages-description-desktop {
+  font-family: "PT Mono", monospace;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 135%;
+  color: variables.$color-black-pearl;
+}
+
+@mixin advantages-description-mobile {
+  font-size: 14px;
+}
+
 @mixin footer-link-desktop {
   font-family: "PT Mono", monospace;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
+  color: rgba(255, 255, 255, 0.7);
+  line-height: 135%;
 }
 
 @mixin footer-link-mobile {
