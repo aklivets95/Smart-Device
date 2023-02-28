@@ -109,46 +109,102 @@
               установить ту цену, которая Вас устраивает.</p>
           </li>
         </ul>
-      </section>
-      <section class="main__about about">
+    </section>
+    <section class="main__about about">
+      <div class="about__container">
         <h2 class="about__title">О компании</h2>
-        <p class="about__description">Мы поставляем электронные комплектующие, производим печатные платы и предоставляем
-          мировые технологии с 1997 года. Выполняем срочные заказы и пилотные образцы до 10 дней.
-          Наши поставщики - мировые производители электронных компонентов: OSRAM, CREE, HOLGLITRONIC, REFOND. Печатные
-          платы и комплектующие Service Devices применяются на предприятиях Российских Железных Дорог (РЖД), РоссАвтоПрома
-          (ВАЗ, АвтоГАЗ), МинАтома, СпецМедТехники. Среди наших клиентов крупнейшие Производители светотехники России.</p>
+        <div class="about__text-wrapper">
+          <p class="about__description">Мы поставляем электронные комплектующие, производим печатные платы и
+            предоставляем
+            мировые технологии с 1997 года. Выполняем срочные заказы и пилотные образцы до 10 дней.</p>
+          <p class="about__description">Наши поставщики - мировые производители электронных компонентов: OSRAM, CREE,
+            HOLGLITRONIC, REFOND. Печатные платы и комплектующие Service Devices применяются на предприятиях Российских
+            Железных Дорог (РЖД), РоссАвтоПрома (ВАЗ, АвтоГАЗ), МинАтома, СпецМедТехники. Среди наших клиентов
+            крупнейшие
+            Производители светотехники России.</p>
+          <p class="about__description about__description--more">Smart Device - это команда профессионалов. Через нас прошло более 1 000
+            000 клиентов, 70% из которых продолжают сотрудничество по сей день. На данный момент насчитывается более 14
+            офисов по всей стране и 20 городов присутствия.
+            Мы стремимся к постоянному развитию и повышению уровня качества продукции, производимой внутри компании.
+            Использование инновационных технологий помогает экономить деньги и время наших клиентов</p>
+        </div>
         <button class="about__more" type="button">Подробнее</button>
-        <span class="about__year">2022</span>
-      </section>
-      <section class="main__services services">
-        <h2 class="visually-hidden">Услуги.</h2>
-        <p class="services__slogan">Smart Device предлагает следующие товары и услуги</p>
-        <ul class="services__list">
-          <li class="services__item">
-            <a class="services__link" href="#">
-              <p class="services__item-description">Производство печатных плат</p>
-              <svg class="services__button-icon" width="60" height="60">
-                <use href="img/sprite.svg#arrow"></use>
-              </svg>
-            </a>
-          </li>
-          <li class="services__item">
-            <a class="services__link" href="#">
-              <p class="services__item-description">Монтаж печатных плат</p>
-              <svg class="services__button-icon" width="60" height="60">
-                <use href="img/sprite.svg#arrow"></use>
-              </svg>
-            </a>
-          </li>
-          <li class="services__item">
-            <a class="services__link" href="#">
-              <p class="services__item-description">Комплектующие для светотехники</p>
-              <svg class="services__button-icon" width="60" height="60">
-                <use href="img/sprite.svg#arrow"></use>
-              </svg>
-            </a>
-          </li>
-        </ul>
+        <div class="about__mask-container">
+          <span class="about__year">2022</span>
+        </div>
+      </div>
+    </section>
+    <section class="main__services services">
+      <h2 class="visually-hidden">Услуги.</h2>
+      <p class="services__slogan">Smart Device предлагает следующие товары и услуги</p>
+      <ul class="services__list">
+        <li class="services__item">
+          <a class="services__link" href="#">
+            <p class="services__item-description">Производство печатных плат</p>
+            <svg class="services__button-icon" width="60" height="60">
+              <use href="img/sprite.svg#arrow"></use>
+            </svg>
+            <picture>
+              <source type="image/webp" media="(max-width: 767px)"
+                srcset="img/background-service/background-service1-mobile.webp 1x, img/background-service/background-service1-mobile2x.webp 2x">
+              <source type="image/webp" media="(max-width: 1023px)"
+                srcset="img/background-service/background-service1-tablet.webp 1x, img/background-service/background-service1-tablet2x.webp 2x">
+              <source type="image/webp"
+                srcset="img/background-service/background-service1-desktop.webp 1x, img/background-service/background-service1-desktop2x.webp 2x">
+              <source media="(max-width: 767px)"
+                srcset="img/background-service/background-service1-mobile.jpg 1x, img/background-service/background-service1-mobile2x.jpg 2x">
+              <source media="(max-width: 1023px)"
+                srcset="img/background-service/background-service1-tablet.jpg 1x, img/background-service/background-service1-tablet2x.jpg 2x">
+              <img class="services__link-image" src="img/background-service/background-service1-desktop.jpg"
+                srcset="img/background-service/background-service1-desktop2x.jpg 2x" width="350" height="650" alt="Фон карточки.">
+            </picture>
+          </a>
+        </li>
+        <li class="services__item">
+          <a class="services__link" href="#">
+            <p class="services__item-description">Монтаж печатных плат</p>
+            <svg class="services__button-icon" width="60" height="60">
+              <use href="img/sprite.svg#arrow"></use>
+            </svg>
+            <picture>
+              <source type="image/webp" media="(max-width: 767px)"
+                srcset="img/background-service/background-service2-mobile.webp 1x, img/background-service/background-service2-mobile2x.webp 2x">
+              <source type="image/webp" media="(max-width: 1023px)"
+                srcset="img/background-service/background-service2-tablet.webp 1x, img/background-service/background-service2-tablet2x.webp 2x">
+              <source type="image/webp"
+                srcset="img/background-service/background-service2-desktop.webp 1x, img/background-service/background-service2-desktop2x.webp 2x">
+              <source media="(max-width: 767px)"
+                srcset="img/background-service/background-service2-mobile.jpg 1x, img/background-service/background-service2-mobile2x.jpg 2x">
+              <source media="(max-width: 1023px)"
+                srcset="img/background-service/background-service2-tablet.jpg 1x, img/background-service/background-service2-tablet2x.jpg 2x">
+              <img class="services__link-image" src="img/background-service/background-service2-desktop.jpg"
+                srcset="img/background-service/background-service2-desktop2x.jpg 2x" width="350" height="650" alt="Фон карточки.">
+            </picture>
+          </a>
+        </li>
+        <li class="services__item">
+          <a class="services__link" href="#">
+            <p class="services__item-description">Комплектующие для светотехники</p>
+            <svg class="services__button-icon" width="60" height="60">
+              <use href="img/sprite.svg#arrow"></use>
+            </svg>
+            <picture>
+              <source type="image/webp" media="(max-width: 767px)"
+                srcset="img/background-service/background-service3-mobile.webp 1x, img/background-service/background-service3-mobile2x.webp 2x">
+              <source type="image/webp" media="(max-width: 1023px)"
+                srcset="img/background-service/background-service3-tablet.webp 1x, img/background-service/background-service3-tablet2x.webp 2x">
+              <source type="image/webp"
+                srcset="img/background-service/background-service3-desktop.webp 1x, img/background-service/background-service3-desktop2x.webp 2x">
+              <source media="(max-width: 767px)"
+                srcset="img/background-service/background-service3-mobile.jpg 1x, img/background-service/background-service3-mobile2x.jpg 2x">
+              <source media="(max-width: 1023px)"
+                srcset="img/background-service/background-service3-tablet.jpg 1x, img/background-service/background-service3-tablet2x.jpg 2x">
+              <img class="services__link-image" src="img/background-service/background-service3-desktop.jpg"
+                srcset="img/background-service/background-service3-desktop2x.jpg 2x" width="350" height="650" alt="Фон карточки.">
+            </picture>
+          </a>
+        </li>
+      </ul>
       </div>
     </section>
     <section class="main__feedback feedback" id="feedback">
@@ -269,7 +325,7 @@
     </div>
   </footer>
   <script src="js/vendor.min.js"></script>
-  <script src="js/main.min.js"></script>
+  <script src="js/main.min.js" type="module"></script>
 </body>
 
 </html>
