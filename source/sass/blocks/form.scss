@@ -7,6 +7,10 @@
   @include vp-1023 {
     padding: 0;
   }
+
+  &--modal {
+    padding: 0;
+  }
 }
 
 .form__wrapper {
@@ -16,6 +20,11 @@
   gap: 5px;
 
   @include vp-767 {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  &--modal {
     flex-direction: column;
     gap: 20px;
   }
@@ -48,6 +57,11 @@
   }
 }
 
+.form__input--modal input {
+  min-width: 0;
+  width: 100%;
+}
+
 .form__question textarea {
   display: block;
   font-family: "PT Mono", monospace;
@@ -70,7 +84,12 @@
 
   @include vp-767 {
     margin-bottom: 30px;
+    min-height: 180px;
   }
+}
+
+.form__question--modal textarea {
+  margin-bottom: 25px;
 }
 
 .form__wrapper-button {
@@ -87,6 +106,12 @@
   @include vp-767 {
     flex-direction: column;
     gap: 25px;
+  }
+
+  &--modal {
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
   }
 }
 
@@ -123,6 +148,11 @@
     min-width: 0;
     width: 100%;
   }
+
+  &--modal {
+    min-width: 0;
+    width: 100%;
+  }
 }
 
 .form__checkbox label {
@@ -136,7 +166,7 @@
   color: variables.$color-default-white;
   opacity: 0.8;
   display: block;
-  max-width: 220px;
+  max-width: 265px;
   padding-left: 26px;
 
   @include hover {
@@ -150,6 +180,10 @@
   @include active {
     opacity: 0.3;
   }
+}
+
+.form__checkbox--modal label {
+  max-width: none;
 }
 
 .form__checkbox span {
@@ -176,6 +210,9 @@
   }
 }
 
+.form__checkbox--modal span {
+  top: 0;
+}
 
 
 .form__checkbox input[type=checkbox]:checked + span::after {

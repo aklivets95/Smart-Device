@@ -3,9 +3,9 @@
 
 .about__container {
   position: relative;
-  max-width: 1220px;
+  max-width: 1263px;
   margin: 0 auto;
-  padding-left: 250px;
+  padding-left: 279px;
   padding-bottom: 20px;
 
   @include vp-1023 {
@@ -18,7 +18,7 @@
 }
 
 .about__title {
-  margin: 0 0 15px;
+  margin: 0 0 11px;
 
   @include mixins.section-title-desktop;
   color: variables.$color-black-pearl;
@@ -57,6 +57,15 @@
   @include vp-1023 {
     margin-bottom: 20px;
   }
+
+  @include vp-767 {
+    height: 203px;
+    overflow: clip;
+
+    &--active {
+      height: auto;
+    }
+  }
 }
 
 .about__more {
@@ -91,12 +100,17 @@
 .about__mask-container {
   position: absolute;
   top: 90px;
-  left: -50px;
+  left: -40px;
   background: url("../../img/background-year.jpg");
   background-position: left 8px top 16px;
   background-repeat: no-repeat;
   transform: rotate(-90deg);
   display: flex;
+
+  @include vp-1023 {
+    left: -23px;
+    top: 92px;
+  }
 
   @include vp-767 {
     display: none;

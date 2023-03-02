@@ -6,11 +6,12 @@
 }
 
 .footer__container {
-  padding: 55px 0;
-  max-width: 1220px;
+  padding: 51px 0 0 17px;
+  max-width: 1235px;
   margin: 0 auto;
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
+  gap: 158px;
 
   @include vp-1023 {
     padding: 50px 50px 65px;
@@ -41,6 +42,7 @@
 .footer__wrapper {
   display: flex;
   gap: 30px;
+  margin-top: 3px;
 
   .is-active {
     .footer__accoridon-button-two {
@@ -49,7 +51,7 @@
   }
 
   @include vp-1023 {
-    gap: 130px;
+    gap: 146px;
   }
 
   @include vp-767 {
@@ -129,7 +131,7 @@
 }
 
 .footer__navigation {
-  min-width: 440px;
+  min-width: 470px;
 
   @include vp-1023 {
     min-width: 0;
@@ -157,6 +159,7 @@
   @include vp-1023 {
     flex-wrap: nowrap;
     max-height: none;
+    gap: 8px;
   }
 
   @include vp-767 {
@@ -198,7 +201,7 @@
   list-style-type: none;
   display: flex;
   flex-direction: column;
-  gap: 5px;
+  gap: 7px;
 
   @include vp-767 {
     padding: 0 25px;
