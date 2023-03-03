@@ -1,5 +1,5 @@
 import {ScrollLock} from './scroll-lock';
-import {FocusLock} from './focus-lock';
+import {FocusLock} from '../../utils/focus-lock';
 
 export class Modals {
   constructor(settings = {}) {
@@ -176,7 +176,9 @@ export class Modals {
     }
 
     if (this._lockFocus) {
-      this._focusLock.lock('.modal.is-active', this._startFocus);
+      setTimeout(() => {
+        this._focusLock.lock('.modal.is-active', this._startFocus);
+      }, '500');
     }
 
     if (this._resetScrollPos) {

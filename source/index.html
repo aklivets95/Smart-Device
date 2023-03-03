@@ -359,8 +359,8 @@
           <form class="modal__form form form--modal" action="https://echo.htmlacademy.ru" method="post">
             <div class="form__wrapper form__wrapper--modal">
               <div class="form__input form__input-name form__input--modal">
-                <label class="visually-hidden" for="name-modal">Имя</label>
-                <input id="name-modal" type="text" placeholder="Имя" required>
+                <label class="visually-hidden" for="name-modal" data-focus>Имя</label>
+                <input id="name-modal" type="text" placeholder="Имя" required data-focus>
               </div>
               <div class="form__input form__input-phone form__input--modal">
                 <label class="visually-hidden" for="phone">Имя</label>
@@ -384,7 +384,7 @@
           </form>
         </div>
         <button class="modal__close-btn btn" type="button" aria-label="Закрыть попап"
-          data-close-modal="data-close-modal" data-focus>
+          data-close-modal="data-close-modal">
           <svg class="modal__button-icon" width="20" height="20">
             <use href="img/sprite.svg#close-modal"></use>
           </svg>
