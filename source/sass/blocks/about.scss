@@ -118,12 +118,12 @@
 }
 
 .about__year {
-  font-family: "Roboto Condensed", sans-serif;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 158px;
   line-height: 150px;
-  color: black;
+  color: variables.$color-default-black;
   background: #ffffff;
   mix-blend-mode: lighten;
 }

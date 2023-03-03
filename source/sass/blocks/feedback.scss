@@ -60,6 +60,7 @@
 
 .feedback__slogan {
   margin: 0 0 12px;
+
   @include mixins.section-title-desktop;
   color: variables.$color-default-white;
 
@@ -77,7 +78,7 @@
 .feedback__description {
   padding-left: 5px;
   margin: 0 0 35px;
-  font-family: "PT Mono", monospace;
+  font-family: "PT Mono", "Arial", monospace;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;

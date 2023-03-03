@@ -1521,7 +1521,7 @@ button,
 }
 
 .footer__container {
-  padding: 51px 0 0 17px;
+  padding: 51px 0 30px 17px;
   max-width: 1235px;
   margin: 0 auto;
   display: -webkit-box;
@@ -1884,7 +1884,7 @@ button,
 }
 
 .services__slogan {
-  margin: 0 0 40px;
+  margin: 0 0 54px;
   color: #f2f5f7;
   font-family: "Roboto Condensed", "Arial", sans-serif;
   font-style: normal;
@@ -1920,7 +1920,7 @@ button,
 .services__link {
   position: relative;
   display: block;
-  padding: 50px 40px 60px;
+  padding: 47px 40px 60px;
   min-height: 650px;
 }
 
@@ -2414,6 +2414,10 @@ button,
 
   .services__container {
     padding: 53px 50px 75px;
+  }
+
+  .services__slogan {
+    margin-bottom: 40px;
   }
 
   .services__list {
