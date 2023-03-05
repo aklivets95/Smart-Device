@@ -1,8 +1,8 @@
-@use "../variables.scss";
-@use "../mixins.scss";
+@import "../variables.scss";
+@import "../mixins.scss";
 
 .services {
-  background-color: variables.$color-black-pearl;
+  background-color: $color-black-pearl;
 }
 
 .services__container {
@@ -21,16 +21,16 @@
 
 .services__slogan {
   margin: 0 0 54px;
-  color: variables.$color-alice-blue;
+  color: $color-alice-blue;
 
-  @include mixins.section-title-desktop;
+  @include section-title-desktop;
 
   @include vp-1023 {
     margin-bottom: 40px;
   }
 
   @include vp-767 {
-    @include mixins.section-title-mobile;
+    @include section-title-mobile;
     margin-bottom: 29px;
   }
 }
@@ -78,6 +78,7 @@
   display: block;
   padding: 47px 40px 60px;
   min-height: 650px;
+  background-color: $color-deep-sky-blue;
 
   @include vp-1023 {
     min-height: 250px;
@@ -93,7 +94,7 @@
   }
 
   @include focus {
-    outline: 1px solid variables.$color-deep-sky-blue;
+    outline: 1px solid $color-deep-sky-blue;
   }
 }
 
@@ -119,15 +120,15 @@
   }
 }
 
-.services__item-description {
+.services__link p {
   position: relative;
   z-index: 1;
   margin: 0;
 
-  @include mixins.services-description-desktop;
+  @include services-description-desktop;
 
   @include vp-767 {
-    @include mixins.services-description-mobile;
+    @include services-description-mobile;
   }
 }
 
@@ -136,7 +137,7 @@
   z-index: 1;
   width: 60px;
   height: 60px;
-  background-color: variables.$color-deep-sky-blue;
+  background-color: $color-deep-sky-blue;
   border-radius: 3px 0 0 0;
   display: flex;
   justify-content: center;

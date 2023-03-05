@@ -1,5 +1,5 @@
-@use "../variables.scss";
-@use "../mixins.scss";
+@import "../variables.scss";
+@import "../mixins.scss";
 
 .header {
   background-image: linear-gradient(180deg, #041827 84.9%, rgba(4, 24, 39, 0) 100%);
@@ -41,9 +41,9 @@
 .header__wrapper-link {
   min-width: 225px;
 
-  @include mixins.footer-link-desktop;
+  @include footer-link-desktop;
   line-height: 18px;
-  color: variables.$color-alice-blue;
+  color: $color-alice-blue;
   display: flex;
   align-items: center;
   gap: 15px;
@@ -58,7 +58,7 @@
   }
 
   @include focus {
-    outline: 1px solid variables.$color-deep-sky-blue;
+    outline: 1px solid $color-deep-sky-blue;
   }
 
   @include active {
@@ -75,9 +75,9 @@
 .header__button-modal {
   flex-shrink: 0;
   background-color: transparent;
-  border: 1px solid variables.$color-alice-blue;
+  border: 1px solid $color-alice-blue;
   border-radius: 3px;
-  color: variables.$color-alice-blue;
+  color: $color-alice-blue;
   font-family: "Roboto Condensed", "Arial", sans-serif;
   font-style: normal;
   font-weight: 700;
@@ -98,7 +98,7 @@
   }
 
   @include focus {
-    outline: 1px solid variables.$color-deep-sky-blue;
+    outline: 1px solid $color-deep-sky-blue;
   }
 
   @include active {
@@ -118,7 +118,7 @@
   }
 
   @include focus {
-    outline: 1px solid variables.$color-deep-sky-blue;
+    outline: 1px solid $color-deep-sky-blue;
   }
 
   @include active {

@@ -1,8 +1,8 @@
-@use "../variables.scss";
-@use "../mixins.scss";
+@import "../variables.scss";
+@import "../mixins.scss";
 
 .feedback {
-  background-color: variables.$color-deep-sky-blue;
+  background-color: $color-deep-sky-blue;
   position: relative;
   min-height: 840px;
 
@@ -13,7 +13,7 @@
     right: 0;
     top: 0;
     bottom: 0;
-    background-image: linear-gradient(319deg, transparent 66%, variables.$color-black-pearl-transparent 50%);
+    background-image: linear-gradient(319deg, transparent 66%, $color-black-pearl-transparent 50%);
   }
 
   @include vp-1023 {
@@ -61,8 +61,8 @@
 .feedback__slogan {
   margin: 0 0 12px;
 
-  @include mixins.section-title-desktop;
-  color: variables.$color-default-white;
+  @include section-title-desktop;
+  color: $color-default-white;
 
   @include vp-1023 {
     margin-bottom: 7px;
@@ -83,7 +83,7 @@
   font-weight: 400;
   font-size: 16px;
   line-height: 22px;
-  color: variables.$color-default-white;
+  color: $color-default-white;
 
   @include vp-1023 {
     padding: 0;

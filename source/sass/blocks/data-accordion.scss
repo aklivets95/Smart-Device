@@ -1,5 +1,5 @@
-@use "../variables.scss";
-@use "../mixins.scss";
+@import "../variables.scss";
+@import "../mixins.scss";
 
 [data-accordion="element"].is-active > [data-accordion="content"] {
   @include vp-767 {

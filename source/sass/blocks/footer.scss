@@ -1,8 +1,8 @@
-@use "../variables.scss";
-@use "../mixins.scss";
+@import "../variables.scss";
+@import "../mixins.scss";
 
 .footer {
-  background-color: variables.$color-black-pearl;
+  background-color: $color-black-pearl;
 }
 
 .footer__container {
@@ -72,7 +72,7 @@
   }
 
   @include focus {
-    outline: 1px solid variables.$color-deep-sky-blue;
+    outline: 1px solid $color-deep-sky-blue;
   }
 
   @include active {
@@ -98,7 +98,7 @@
   }
 
   @include focus {
-    outline: 1px solid variables.$color-deep-sky-blue;
+    outline: 1px solid $color-deep-sky-blue;
   }
 
   @include active {
@@ -117,7 +117,7 @@
   line-height: 16px;
   letter-spacing: 0.05em;
   text-transform: uppercase;
-  color: variables.$color-default-white;
+  color: $color-default-white;
   margin-bottom: 20px;
   padding: 0;
 
@@ -169,7 +169,7 @@
 }
 
 .footer__navigation-link {
-  @include mixins.footer-link-desktop;
+  @include footer-link-desktop;
   display: flex;
 
   @include hover {
@@ -177,7 +177,7 @@
   }
 
   @include focus {
-    outline: 1px solid variables.$color-deep-sky-blue;
+    outline: 1px solid $color-deep-sky-blue;
   }
 
   @include active {
@@ -214,19 +214,19 @@
 }
 
 .footer__adress-text {
-  @include mixins.footer-link-desktop;
+  @include footer-link-desktop;
   max-width: 345px;
 }
 
 .footer__adress-phone {
-  @include mixins.footer-link-desktop;
+  @include footer-link-desktop;
 
   @include hover {
     opacity: 0.5;
   }
 
   @include focus {
-    outline: 1px solid variables.$color-deep-sky-blue;
+    outline: 1px solid $color-deep-sky-blue;
   }
 
   @include active {

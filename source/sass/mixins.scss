@@ -1,4 +1,4 @@
-@use "./variables.scss";
+@import "./variables.scss";
 
 @mixin main-title-desktop {
   font-family: "Roboto Condensed", "Arial", sans-serif;
@@ -8,7 +8,7 @@
   line-height: 94px;
   letter-spacing: 0.07em;
   text-transform: uppercase;
-  color: variables.$color-alice-blue;
+  color: $color-alice-blue;
 }
 
 @mixin main-title-tablet {
@@ -37,7 +37,7 @@
   font-weight: 400;
   font-size: 22px;
   line-height: 155%;
-  color: variables.$color-alice-blue;
+  color: $color-alice-blue;
 }
 
 @mixin main-block-text-mobile {
@@ -84,7 +84,7 @@
   font-weight: 400;
   font-size: 24px;
   line-height: 24px;
-  color: variables.$color-deep-sky-blue;
+  color: $color-deep-sky-blue;
 }
 
 @mixin advantages-title-mobile {
@@ -98,7 +98,7 @@
   font-weight: 400;
   font-size: 16px;
   line-height: 135%;
-  color: variables.$color-black-pearl;
+  color: $color-black-pearl;
 }
 
 @mixin advantages-description-mobile {
@@ -111,7 +111,7 @@
   font-weight: 400;
   font-size: 20px;
   line-height: 30px;
-  color: variables.$color-default-white;
+  color: $color-default-white;
 }
 
 @mixin services-description-mobile {
