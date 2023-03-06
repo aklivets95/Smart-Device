@@ -1909,6 +1909,8 @@ button,
   -ms-flex-pack: justify;
   justify-content: space-between;
   gap: 5px;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
 }
 
 .services__item {
