@@ -115,16 +115,21 @@
             предоставляем
             мировые технологии с&nbsp;1997&nbsp;года. Выполняем срочные заказы и&nbsp;пилотные образцы
             до&nbsp;10&nbsp;дней.</p>
-          <p class="about__description">Наши поставщики&nbsp;&mdash; мировые производители электронных компонентов: OSRAM, CREE,
-            HOLGLITRONIC, REFOND. Печатные платы и&nbsp;комплектующие Service Devices применяются на&nbsp;предприятиях Российских
+          <p class="about__description">Наши поставщики&nbsp;&mdash; мировые производители электронных компонентов:
+            OSRAM, CREE,
+            HOLGLITRONIC, REFOND. Печатные платы и&nbsp;комплектующие Service Devices применяются на&nbsp;предприятиях
+            Российских
             Железных Дорог (РЖД), РоссАвтоПрома (ВАЗ, АвтоГАЗ), МинАтома, СпецМедТехники. Среди наших клиентов
             крупнейшие
             Производители светотехники России.</p>
-          <p class="about__description about__description--more">Smart Device&nbsp;&mdash; это команда профессионалов. Через нас
+          <p class="about__description about__description--more">Smart Device&nbsp;&mdash; это команда профессионалов.
+            Через нас
             прошло более 1&nbsp;000
-            000&nbsp;клиентов, 70% из&nbsp;которых продолжают сотрудничество по&nbsp;сей день. На&nbsp;данный момент насчитывается более 14
+            000&nbsp;клиентов, 70% из&nbsp;которых продолжают сотрудничество по&nbsp;сей день. На&nbsp;данный момент
+            насчитывается более 14
             офисов по&nbsp;всей стране и&nbsp;20&nbsp;городов присутствия.
-            Мы&nbsp;стремимся к&nbsp;постоянному развитию и&nbsp;повышению уровня качества продукции, производимой внутри компании.
+            Мы&nbsp;стремимся к&nbsp;постоянному развитию и&nbsp;повышению уровня качества продукции, производимой
+            внутри компании.
             Использование инновационных технологий помогает экономить деньги и&nbsp;время наших клиентов</p>
         </div>
         <button class="about__more" type="button">Подробнее</button>
@@ -240,7 +245,7 @@
               </div>
               <div class="form__input form__input-phone">
                 <label class="visually-hidden" for="phone">Имя</label>
-                <input id="phone" type="tel" placeholder="Телефон" required>
+                <input id="phone" type="tel" placeholder="Телефон" minlength="18" required>
               </div>
             </div>
             <div class="form__question">
@@ -248,7 +253,6 @@
               <textarea id="question" placeholder="Ваш вопрос"></textarea>
             </div>
             <div class="form__wrapper-button">
-              <button class="form__submit" type="submit">Задать вопрос</button>
               <div class="form__checkbox">
                 <label>
                   <input class="visually-hidden" type="checkbox" id="checkbox" checked required>
@@ -256,6 +260,7 @@
                   Я согласен на обработку персональных данных
                 </label>
               </div>
+              <button class="form__submit" type="submit">Задать вопрос</button>
             </div>
           </form>
         </div>
@@ -294,7 +299,8 @@
       </div>
       <div class="footer__wrapper" data-accordion="parent" data-single>
         <div class="footer__navigation" data-accordion="element">
-          <button type="button" class="footer__navigation-title footer__accoridon-button" data-accordion="button">
+          <button type="button" class="footer__navigation-title footer__accoridon-button" data-accordion="button"
+            tabindex="-1">
             Разделы сайта
             <span class="footer__accoridon-button-one"></span>
             <span class="footer__accoridon-button-two"></span>
@@ -323,8 +329,9 @@
             </li>
           </ul>
         </div>
-        <div class="footer__adress is-active" data-accordion="element">
-          <button type="button" class="footer__adress-title footer__accoridon-button" data-accordion="button">Наш офис
+        <div class="footer__adress" data-accordion="element">
+          <button type="button" class="footer__adress-title footer__accoridon-button" data-accordion="button"
+            tabindex="-1">Наш офис
             <span class="footer__accoridon-button-one"></span>
             <span class="footer__accoridon-button-two"></span>
           </button>
@@ -362,7 +369,7 @@
               </div>
               <div class="form__input form__input-phone form__input--modal">
                 <label class="visually-hidden" for="phone-modal">Имя</label>
-                <input id="phone-modal" type="tel" placeholder="Телефон" required>
+                <input id="phone-modal" type="tel" placeholder="Телефон" minlength="11" required>
               </div>
             </div>
             <div class="form__question form__question--modal">
@@ -370,7 +377,6 @@
               <textarea id="question-modal" placeholder="Ваш вопрос"></textarea>
             </div>
             <div class="form__wrapper-button form__wrapper-button--modal">
-              <button class="form__submit form__submit--modal" type="submit">Отправить</button>
               <div class="form__checkbox form__checkbox--modal">
                 <label>
                   <input class="visually-hidden" type="checkbox" id="checkbox-modal" checked required>
@@ -378,6 +384,7 @@
                   Я согласен на обработку персональных данных
                 </label>
               </div>
+              <button class="form__submit form__submit--modal" type="submit">Отправить</button>
             </div>
           </form>
         </div>

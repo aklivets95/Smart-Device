@@ -6,9 +6,9 @@
 }
 
 .services__container {
-  max-width: 1235px;
+  max-width: 1274px;
   margin: 0 auto;
-  padding: 64px 0 140px 18px;
+  padding: 64px 18px 140px 35px;
 
   @include vp-1023 {
     padding: 53px 50px 75px;
@@ -53,12 +53,12 @@
   margin: 0;
   padding: 0;
   list-style-type: none;
-  display: flex;
-  justify-content: space-between;
-  gap: 5px;
-  flex-wrap: wrap;
+  display: grid;
+  gap: 80px;
+  grid-template-columns: repeat(3, 1fr);
 
   @include vp-1023 {
+    display: flex;
     flex-direction: column;
     gap: 30px;
     justify-self: start;
