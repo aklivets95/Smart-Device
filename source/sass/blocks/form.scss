@@ -30,6 +30,11 @@
   }
 }
 
+.form__input {
+  display: flex;
+  flex-grow: 1;
+}
+
 .form__input input {
   font-family: "PT Mono", "Arial", monospace;
   font-style: normal;
@@ -48,7 +53,8 @@
   }
 
   @include vp-1023 {
-    min-width: 320px;
+    min-width: 0;
+    width: 100%;
   }
 
   @include vp-767 {

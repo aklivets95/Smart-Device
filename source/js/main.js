@@ -4,7 +4,6 @@ import {Form} from './modules/form-validate/form';
 import {initAccordions} from './vendor/init-accordion';
 import {showMoreText} from './modules/more-text';
 import {initPhoneMask} from './vendor/phone-mask';
-import {validateLengthPhone} from './modules/validate-phone';
 
 // ---------------------------------
 
@@ -15,7 +14,6 @@ window.addEventListener('DOMContentLoaded', () => {
 
   iosVhFix();
   showMoreText();
-  validateLengthPhone();
   // Modules
   // ---------------------------------
 

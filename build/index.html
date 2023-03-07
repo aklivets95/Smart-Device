@@ -245,7 +245,7 @@
               </div>
               <div class="form__input form__input-phone">
                 <label class="visually-hidden" for="phone">Имя</label>
-                <input id="phone" type="tel" placeholder="Телефон" minlength="18" required>
+                <input id="phone" type="tel" placeholder="Телефон" pattern=".{18,}" title="Минимум 11 цифр" required>
               </div>
             </div>
             <div class="form__question">
@@ -369,7 +369,7 @@
               </div>
               <div class="form__input form__input-phone form__input--modal">
                 <label class="visually-hidden" for="phone-modal">Имя</label>
-                <input id="phone-modal" type="tel" placeholder="Телефон" minlength="11" required>
+                <input id="phone-modal" type="tel" placeholder="Телефон" pattern=".{18,}" title="Минимум 11 цифр" required>
               </div>
             </div>
             <div class="form__question form__question--modal">

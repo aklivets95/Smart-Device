@@ -2086,6 +2086,15 @@ button,
   gap: 20px;
 }
 
+.form__input {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+}
+
 .form__input input {
   font-family: "PT Mono", "Arial", monospace;
   font-style: normal;
@@ -2522,7 +2531,8 @@ button,
   }
 
   .form__input input {
-    min-width: 320px;
+    min-width: 0;
+    width: 100%;
   }
 
   .form__wrapper-button {
